@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <style>
+      #navbar{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid;
+      }
+      #container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+      }
+      #container img{
+        width: 200px;
+        height: 200px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+    <div id="navbar">
+    
+    </div>
+    
+    <!-- Sidebar will have id "sidebar"  -->
+    <div id="sidebar">
+       <h2 id="in">India</h2>
+       <h2 id="ch">China</h2>
+       <h2 id="us">USA</h2>
+       <h2 id="uk">UK</h2>
+       <h2 id="nz">Newzeland</h2>
+
+    </div>
+    <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+  </body>
+</html>
+<script type="module" src="/scripts/index.js">
+//https://masai-mock-api.herokuapp.com/news/top-headlines?country={country code}
+
+</script>
